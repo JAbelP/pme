@@ -217,7 +217,7 @@ const sendEmail = async () => {
               </button>
             </>
           ) : (page === 2? (<>
-            <div className='bg-slate-200 p-2 text-xl w-[350px] whitespace-pre-wrap mb-4'>
+            <div className='bg-slate-200 p-2 text-xl w-[350px] text-black whitespace-pre-wrap mb-4'>
                 Thank you for your message. We will get in touch with you shortly 
             </div>
           </>):null)
