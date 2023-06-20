@@ -114,7 +114,7 @@ const dropDown = (tabName) =>{
         {/* <Link href={"/"}> */}
           <p onClick={() => dropDown('home')}>Home</p>
           {activeMenu === 'home' && (
-              <ul className=' pt-2 space-y-8'>
+              <ul className=' pt-2 space-y-8 text-4xl'>
                 <li>Choice 1a</li>
                 <li>Choice 1b</li>
               </ul>
