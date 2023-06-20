@@ -1,6 +1,8 @@
 import React from 'react'
-
 import {Headers} from "../../components/header/Headers"
+import {EyeCatch} from "../../components/pageEyecatch/EyeCatch"
+import { GenSideBarLinks, RequestAppointmentSide } from "../../components/genSideBar/"
+import {MidCatchChatYellow,MidCatchChatRed} from "../../components/midCatchChat/"
 function page() {
   return (
     <div>
@@ -8,12 +10,13 @@ function page() {
         919-557-447
       </div>
       <Headers/>
-
+        <EyeCatch/>
         <div className='bg-white text-black relative mt-10 flex flex-col text-center sm:flex-row  pb-3'>
         {/* split this please */}
           <div className='lg:w-1/4 md:2/3'>
           {/* Right hand side */}
-            Working here
+          <GenSideBarLinks/>
+            <RequestAppointmentSide/>
           </div>
           <div className='lg:w-3/4'>
             {/* Left hand side */}
@@ -31,7 +34,7 @@ function page() {
               is versed on the latest and greatest generators to not only make sure we suggest the 
               best one for your family but stay in your budget also. Reach out to a member of our generator
                team today for a free, no obligation generator consultation today!</p>
-            
+               <MidCatchChatYellow/>
             <p className='mt-3 text-2xl text-left'>Expert Generator Installation</p>
             <p className='p-6 text-left'>
             Our expert team is ready to handle and wire your new generator directly
@@ -42,7 +45,7 @@ function page() {
               hazards, so make sure you have your generator installed by a 
               certified professional every time.
             </p>
-            
+            <MidCatchChatRed/>
           </div>
           {/* LEFT HAND SIDE  */}
         </div>
