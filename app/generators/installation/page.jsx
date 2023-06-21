@@ -1,12 +1,12 @@
 import React from 'react'
 // import {EyeCatch} from "../../components/pageEyecatch/EyeCatch"
 
-import {
-    MidCatchChatYellow,
-    MidCatchChatRed} from "../../components/midCatchChat/"
-import {GenSideBarLinks,RequestAppointmentSide} from "../../components/genSideBar"
-import {Headers} from "../../components/header/Headers"
-import {Reassurance} from "../../components/bottomEyeCatch/Reassurance"
+// import {
+//     MidCatchChatYellow,
+//     MidCatchChatRed} from "../../components/midCatchChat/"
+// import {GenSideBarLinks,RequestAppointmentSide} from "../../components/genSideBar"
+// import {Headers} from "../../components/header/Headers"
+// import {Reassurance} from "../../components/bottomEyeCatch/Reassurance"
 function page() {
   return (
     <div>
