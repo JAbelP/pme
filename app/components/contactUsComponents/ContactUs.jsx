@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React, { useState,useEffect } from 'react';
 //[TODO: FONTS NEED TO BE FOND]
 //[TODO: MAKE PHONE NUMBER CLICKABLE]
@@ -115,31 +115,32 @@ export const ContactUs = (props) => {
 
 /**
  * sends the Email
- * @async
+ * 
  */
 const sendEmail = async () => {
-  try {
-    const response = await fetch('/api/jobEmail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        fullName: fullName,
-        email: email,
-        phone: phone,
-        selectedOption: selectedOption
-      })
-    });
+  console.log('sendEmail');
+  // try {
+  //   const response = await fetch('/api/jobEmail', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //       fullName: fullName,
+  //       email: email,
+  //       phone: phone,
+  //       selectedOption: selectedOption
+  //     })
+  //   });
 
-    if (response.ok) {
-      console.log('Email sent successfully');
-    } else {
-      console.error('Failed to send email');
-    }
-  } catch (error) {
-    console.error('Error sending email:', error);
-  }
+  //   if (response.ok) {
+  //     console.log('Email sent successfully');
+  //   } else {
+  //     console.error('Failed to send email');
+  //   }
+  // } catch (error) {
+  //   console.error('Error sending email:', error);
+  // }
 };
 
 
