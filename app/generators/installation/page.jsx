@@ -1,9 +1,8 @@
 import React from 'react'
 // import {EyeCatch} from "../../components/pageEyecatch/EyeCatch"
 
-// import {
-//     MidCatchChatYellow,
-//     MidCatchChatRed} from "../../components/midCatchChat/"
+import { MidCatchChatYellow, MidCatchChatRed} from "../../midCatchChat"
+
 // import {GenSideBarLinks,RequestAppointmentSide} from "../../components/genSideBar"
 // import {Headers} from "../../components/header/Headers"
 // import {Reassurance} from "../../components/bottomEyeCatch/Reassurance"
@@ -41,7 +40,7 @@ function page() {
               is versed on the latest and greatest generators to not only make sure we suggest the 
               best one for your family but stay in your budget also. Reach out to a member of our generator
                team today for a free, no obligation generator consultation today!</p>
-            {/* <MidCatchChatYellow/> */}
+            <MidCatchChatYellow/>
             <p className='mt-3 text-2xl text-left'>Expert Generator Installation</p>
             <p className='p-6 text-left'>
             Our expert team is ready to handle and wire your new generator directly
@@ -52,7 +51,7 @@ function page() {
               hazards, so make sure you have your generator installed by a 
               certified professional every time.
             </p>
-            {/* <MidCatchChatRed/> */}
+            <MidCatchChatRed/>
           </div>
           {/* LEFT HAND SIDE  */}
         </div>
