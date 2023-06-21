@@ -1,5 +1,5 @@
 import React from 'react'
-// import {EyeCatch} from "../../components/pageEyecatch/EyeCatch"
+import {EyeCatch} from "../../components/pageEyecatch/EyeCatch"
 
 import { MidCatchChatYellow, MidCatchChatRed} from "../../components/midCatchChat"
 
@@ -15,7 +15,7 @@ function page() {
       <Headers/>
       
 
-        {/* <EyeCatch/> */}
+        <EyeCatch/>
         <div className='bg-white text-black relative mt-10 flex flex-col text-center sm:flex-row  pb-3'>
         {/* split this please */}
           <div className='lg:w-1/4 md:2/3'>
