@@ -53,39 +53,7 @@ export const ContactUs = () =>{
 }
     return (
         <div className='flex flex-col justify-center items-center gap-y-1'>
-            <>
-              <select
-                id="servicesDropdown"
-                className='pl-5 h-10 mb-3 w-[15rem] md:w-[24rem] text-black rounded-sm'
-                value={selectedOption}
-                onChange={handleDropDownChange}
-              >
-                <option value="">Services You're Interested In</option>
-                {options.map((option) => (
-                  <option key={option} value={option} className='text-black'>
-                    {option}
-                  </option>
-                ))}
-              </select>
-              <input
-                className='pl-5 h-10 w-[15rem] md:w-[24rem] text-black rounded-sm placeholder:text-gray-500'
-                type="text"
-                value={fullName}
-                onChange={handleFullNameChange}
-                placeholder="Full Name"
-              />
-              <div>
-                {nameWarning ? (
-                  <p className="text-red-500 mb-1 capitalize text-left">
-                    *Please Enter your name
-                  </p>
-                ) : (<>&nbsp;</>
-                )}
-              </div>
-              <button className='bg-yellow-400 text-white h-10 w-[15rem] md:w-[24rem]' onClick={increasePage}>
-                NEXT STEP
-              </button>
-            </>
+
 
         </div>
       );
