@@ -4,7 +4,7 @@ import React from 'react'
 import { MidCatchChatYellow, MidCatchChatRed} from "../../components/midCatchChat"
 
 import {GenSideBarLinks,RequestAppointmentSide} from "../../components/genSideBar"
-// import {Headers} from "../../header/Headers"
+import {Headers} from "../../components/header/Headers"
 // import {Reassurance} from "../../components/bottomEyeCatch/Reassurance"
 function page() {
   return (
@@ -12,7 +12,7 @@ function page() {
       <div className=' bg-black  text-yellow-400 text-center py-2 visible lg:hidden '> 
         919-557-447
       </div>
-      {/* <Headers/> */}
+      <Headers/>
       
 
         {/* <EyeCatch/> */}
