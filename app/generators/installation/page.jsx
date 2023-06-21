@@ -1,9 +1,10 @@
 import React from 'react'
 
-import { MidCatchChatYellow, MidCatchChatRed} from "../../components/midCatchChat"
+import { MidCatchChatYellow, MidCatchChatRed} from "../../components/midCatchChat";
 
-import {GenSideBarLinks,RequestAppointmentSide} from "../../components/genSideBar"
-import {Headers} from "../../components/header/Headers"
+import {GenSideBarLinks,RequestAppointmentSide} from "../../components/genSideBar";
+import {Headers} from "../../components/header/Headers";
+import {EyeCatch} from "../../components/pageEyeCatch/EyeCatch";
 // import {Reassurance} from "../../components/bottomEyeCatch/Reassurance"
 function page() {
   return (
@@ -13,7 +14,7 @@ function page() {
       </div>
       <Headers/>
       
-       {/*<EyeCatch/> */}
+       <EyeCatch/>
         <div className='bg-white text-black relative mt-10 flex flex-col text-center sm:flex-row  pb-3'>
         {/* split this please */}
           <div className='lg:w-1/4 md:2/3'>
