@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { ButtonEyeCatch } from './ButtonEyeCatch';
-// import { ContactUs } from '../contactUsComponents/ContactUs';
+ import { ContactUs } from '../contactUsComponents/ContactUs';
 
 export const EyeCatch = () => {
   const pathname = usePathname();
@@ -50,7 +50,7 @@ export const EyeCatch = () => {
           <div className='text-center'>
             <p className='text-4xl mb-3 uppercase'> Looking for GENERATOR SERVICES?</p>
             <p className='text-2xl mb-3'> Contact Us Today</p>
-            {/* <ContactUs pathname={pathname} /> */}
+            <ContactUs  />
           </div>
         </div>
       </div>
