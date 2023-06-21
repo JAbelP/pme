@@ -3,7 +3,7 @@ import React from 'react'
 
 import { MidCatchChatYellow, MidCatchChatRed} from "../../midCatchChat"
 
-// import {GenSideBarLinks,RequestAppointmentSide} from "../../components/genSideBar"
+import {GenSideBarLinks,RequestAppointmentSide} from "../../genSideBar"
 // import {Headers} from "../../components/header/Headers"
 // import {Reassurance} from "../../components/bottomEyeCatch/Reassurance"
 function page() {
@@ -20,9 +20,9 @@ function page() {
         {/* split this please */}
           <div className='lg:w-1/4 md:2/3'>
           {/* Right hand side */}
-            {/* <GenSideBarLinks/> */}
-            Working here
-            {/* <RequestAppointmentSide/> */}
+            <GenSideBarLinks/>
+            
+            <RequestAppointmentSide/>
           </div>
           <div className='lg:w-3/4'>
             {/* Left hand side */}
