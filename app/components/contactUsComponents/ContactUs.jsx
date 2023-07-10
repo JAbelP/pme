@@ -67,7 +67,7 @@ export const ContactUs = () => {
 
       <div className='flex flex-col justify-center items-center gap-y-1'>
         <select
-          className="text-black px-3 py-2 w-60 lg:w-[450px] h-10 mb-3 rounded-sm"
+          className="text-black px-3 py-2 w-96  lg:w-[450px] h-10 mb-3 rounded-sm"
           value={selectedOption}
           onChange={handleDropDownChange}
         >
@@ -78,7 +78,7 @@ export const ContactUs = () => {
           ))}
         </select>
         <input
-          className={`text-black px-3 py-2 lg:w-[450px] h-12 mb-${nameWarning ? 1 : 3} rounded-sm`}
+          className={`text-black px-3 py-2 w-96 lg:w-[450px] h-12 mb-${nameWarning ? 1 : 3} rounded-sm`}
           type="text"
           placeholder="Full Name"
           onChange={handleFullNameChange}
@@ -89,7 +89,7 @@ export const ContactUs = () => {
           <p className="text-red-500 text-xs">Please fill in the Full Name field.</p>
         )}
         <input
-          className={`text-black px-3 py-2 lg:w-[450px] h-10 mb-${emailWarning ? 1 : 3} rounded-sm`}
+          className={`text-black px-3 py-2 w-96 lg:w-[450px] h-10 mb-${emailWarning ? 1 : 3} rounded-sm`}
           type="text"
           placeholder="Email"
           onChange={handleEmailChange}
@@ -100,7 +100,7 @@ export const ContactUs = () => {
           <p className="text-red-500 text-xs">Please fill in the Email field.</p>
         )}
         <input
-          className={`text-black px-3 py-2 lg:w-[450px] h-10 mb-${phoneWarning ? 1 : 3} rounded-sm`}
+          className={`text-black px-3 py-2 w-96 lg:w-[450px] h-10 mb-${phoneWarning ? 1 : 3} rounded-sm`}
           type="text"
           placeholder="Phone Number"
           onChange={handlePhoneChange}
@@ -111,7 +111,7 @@ export const ContactUs = () => {
           <p className="text-red-500 text-xs">Please fill in the Phone Number field.</p>
         )}
         <button
-          className="flex justify-center items-center w-64 bg-yellow-300 text-black px-5 py-4 h-[57px] lg:w-[450px] font-bold rounded-md"
+          className="flex justify-center items-center w-96 bg-yellow-300 text-black px-5 py-4 h-[57px] lg:w-[450px] font-bold rounded-md"
           onClick={handleSubmit}
         >
           SUBMIT INFORMATION NOW

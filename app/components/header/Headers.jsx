@@ -40,9 +40,11 @@ export const Headers = () => {
                 <div className=''>
                 Need an Electrician?
             </div>
-            <div>
-                (919) 557-4477
-            </div>
+            <a href="tel:919-557-4477">
+              <div>
+                  (919) 557-4477
+              </div>
+            </a>
         </div>
       </div>
 
