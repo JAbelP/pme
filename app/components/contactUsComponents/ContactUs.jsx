@@ -65,12 +65,6 @@ export const ContactUs = () => {
   return (
     <div className='flex flex-col justify-center items-center gap-y-1 text-black'>
 
-      {selectedOption && (
-        <div>
-          <h3>Selected option: {selectedOption}</h3>
-        </div>
-      )}
-
       <div className='flex flex-col justify-center items-center gap-y-1'>
         <select
           className="text-black px-3 py-2 w-60 lg:w-[450px] h-10 mb-3 rounded-sm"
