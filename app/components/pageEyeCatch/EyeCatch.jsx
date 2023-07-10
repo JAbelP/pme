@@ -37,7 +37,7 @@ export const EyeCatch = () => {
                 {headerName}
               </h1>
               <div className="Pseudo w-24 h-2 bg-yellow-400 ml-10" />
-                <h4 className='mt-6 text-2xl capitalize font-bold text-yellow-300'>
+                <h4 className='mt-6 text-2xl capitalize font-bold text-yellow-300 text-left pl-10'>
                   {subHeaderName}
                 </h4>
             </div>
