@@ -5,10 +5,9 @@ import { MidCatchChatYellow, MidCatchChatRed} from "../../components/midCatchCha
 import {GenSideBarLinks,RequestAppointmentSide} from "../../components/genSideBar";
 import {Headers} from "../../components/header/Headers";
 import {EyeCatch} from "../../components/pageEyeCatch/EyeCatch";
+import {PlayItSafe} from "../../components/bottomEyeCatch/PlayItSafe";
 import { Montserrat } from 'next/font/google';
-
 const montserrat = Montserrat({ subsets:['latin'] });
-
 
 function page() {
   return (
@@ -78,13 +77,7 @@ function page() {
           </div>
           {/* LEFT HAND SIDE  */}
         </div>
-
-
-        {/* bottom Eye Catch */}
-        {/* <div className='mt-1'>
-          Bottom Eye Catch
-          <Reassurance/>
-        </div> */}
+          <PlayItSafe/>
     </div>
   )
 }
