@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { ButtonEyeCatch } from './ButtonEyeCatch';
 import { ContactUs } from '../contactUsComponents/ContactUs';
+//how I do Fonts.
 import {  Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({ subsets:['latin'] });

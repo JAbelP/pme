@@ -111,11 +111,14 @@ export const ContactUs = () => {
           <p className="text-red-500 text-xs">Please fill in the Phone Number field.</p>
         )}
         <button
-          className="flex justify-center items-center w-64 bg-yellow-300 text-black px-5 py-4 h-[57px] lg:w-[450px]"
+          className="flex justify-center items-center w-64 bg-yellow-300 text-black px-5 py-4 h-[57px] lg:w-[450px] font-bold rounded-md"
           onClick={handleSubmit}
         >
-          Get In Touch Now!
+          SUBMIT INFORMATION NOW
         </button>
+          <a href="tel:919-557-4477">
+            <div className="w-56 h-9 text-yellow-200 text-3xl font-semibold leading-9">(919) 557-4477</div>
+          </a>
       </div>
     </div>
   );
