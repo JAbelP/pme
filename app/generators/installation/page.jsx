@@ -8,10 +8,12 @@ import {EyeCatch} from "../../components/pageEyeCatch/EyeCatch";
 // import {Reassurance} from "../../components/bottomEyeCatch/Reassurance"
 function page() {
   return (
-    <div>
-      <div className=' bg-black  text-yellow-400 text-center py-2 visible lg:hidden '> 
-        919-557-447
-      </div>
+    <div> 
+      <a href="tel:919-557-4477">
+        <div className=' bg-black  text-yellow-400 text-center py-2 visible lg:hidden '> 
+          (919)-557-447
+        </div>
+      </a>
       <Headers/>
       
        <EyeCatch/>
