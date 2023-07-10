@@ -16,15 +16,15 @@ export const Headers = () => {
             <div className="relative group">
               <p className="cursor-pointer hover:bg-yellow-400 pb-2 px-3">Generator</p>
               <div className="absolute top-8 left-0 bg-white border z-20 text-base border-gray-200 hidden group-hover:block">
-                <p className="px-4 py-2  hover:bg-yellow-400 ">IT Service 1</p>
-                <p className="px-4 py-2  hover:bg-yellow-400">IT Service 2</p>
+                <p className="px-4 py-2  hover:bg-yellow-400 "> Service 1</p>
+                <p className="px-4 py-2  hover:bg-yellow-400">Service 2</p>
               </div>
             </div>
             <div className="relative group">
               <p className="cursor-pointer hover:bg-yellow-400 pb-2 px-3">Generator</p>
               <div className="absolute top-8 left-0 bg-white border z-20 text-base border-gray-200 hidden group-hover:block">
-                <p className="px-4 py-2 hover:text-white hover:bg-yellow-400 ">IT Service 1</p>
-                <p className="px-4 py-2 hover:text-black hover:bg-yellow-400 ">IT Service 2</p>
+                <p className="px-4 py-2 hover:text-white hover:bg-yellow-400 "> Service 1</p>
+                <p className="px-4 py-2 hover:text-black hover:bg-yellow-400 "> Service 2</p>
               </div>
             </div>
             <p className="relative group cursor-pointer hover:bg-yellow-400 pb-2 px-3 ">

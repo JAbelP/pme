@@ -34,7 +34,7 @@ export const EyeCatch = () => {
                 {headerName}
               </h1>
               <div className='content-center '>
-                <div className='h-2 w-28 bg-yellow-500 mt-5 absolute md:left-48 md:top-7 left-32 top-16 '>&nbsp;</div>
+                {/* <div className='h-2 w-28 bg-yellow-500 mt-5 absolute md:left-48 md:top-7 left-32 top-16 '>&nbsp;</div> */}
                 <h4 className='mt-6 text-2xl capitalize'>
                   {subHeaderName}
                 </h4>
@@ -47,7 +47,7 @@ export const EyeCatch = () => {
             </div>
           </div>
           <div className='text-center'>
-            <p className='text-4xl mb-3 uppercase'> Looking for GENERATOR SERVICES?</p>
+            <p className='text-4xl mb-3 uppercase whitespace-break-spaces'> Looking for GENERATOR SERVICES?</p>
             <p className='text-2xl mb-3'> Contact Us Today</p>
             <ContactUs  />
           </div>

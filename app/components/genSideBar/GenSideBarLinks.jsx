@@ -2,7 +2,7 @@ import React from 'react'
 
 export const GenSideBarLinks = () => {
   return (
-    <div className='bg-orange-400 mt-5 pt-4 w-5/6 mb-3 mx-auto border-y-[25px] border-black text-left pl-4'>
+    <div className='bg-orange-400 mt-5 pt-4 w-5/6 mb-3 mx-auto border-y-[25px] lg:w-72 border-black text-left pl-4 py-12'>
         <div className='text-2xl '>
             Generators
         </div>
