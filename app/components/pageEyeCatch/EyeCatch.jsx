@@ -33,14 +33,13 @@ export const EyeCatch = () => {
         <div className="flex flex-col lg:flex-row justify-center text-center items-center relative">
           <div className='relative'>
             <div className='justify-center'>
-              <h1 className='text-4xl capitalize'>
+              <h1 className='text-4xl capitalize  font-bold leading-10 mb-5'>
                 {headerName}
               </h1>
-              <div className='content-center '>
-                <h4 className='mt-6 text-2xl capitalize'>
+              <div className="Pseudo w-24 h-2 bg-yellow-400 ml-10" />
+                <h4 className='mt-6 text-2xl capitalize font-bold text-yellow-300'>
                   {subHeaderName}
                 </h4>
-              </div>
             </div>
             <div className='flex  flex-col items-center md:flex-row gap-x-10 mb-6 md:mr-8'>
               <ButtonEyeCatch />
