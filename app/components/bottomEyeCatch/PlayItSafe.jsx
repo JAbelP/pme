@@ -14,7 +14,7 @@ export const PlayItSafe = () => {
       ),
       bodyText: (
         <>
-          You’ll get an extra level of
+          You&apos;ll get an extra level of
           <br />
           protection and peace of
           <br />
@@ -69,9 +69,9 @@ export const PlayItSafe = () => {
       ),
       bodyText: (
         <>
-          We’ll give you options for <br />
+          We&apos;ll give you options for <br />
           your services so you know <br />
-          exactly what you're getting.
+          exactly what you&apos;re getting.
         </>
       ),
     },
@@ -80,10 +80,10 @@ export const PlayItSafe = () => {
   return (
     <div className="flex-col justify-center items-center bg-white w-full pt-4 lg:pl-96">
       <h2 className="text-center mb-5">
-        <div className=" justify-center items-center inline-flex ">
-          <div className=" text-orange-300 text-5xl font-bold leading-10 ">Play It Safe & Choose</div>
+        <div className="justify-center items-center inline-flex">
+          <div className="text-orange-300 text-5xl font-bold leading-10">Play It Safe & Choose</div>
         </div>
-        <div className=" text-black text-5xl font-bold leading-10">PowerMaster Electric</div>
+        <div className="text-black text-5xl font-bold leading-10">PowerMaster Electric</div>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-9 w-auto lg:ml-80">
         {reassuranceBoxes.map((box, index) => (
