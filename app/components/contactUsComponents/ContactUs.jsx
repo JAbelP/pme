@@ -52,9 +52,22 @@ export const ContactUs = () =>{
     setPage(1);
 }
     return (
-        <div className='flex flex-col justify-center items-center gap-y-1'>
+      <div className='flex flex-col justify-center items-center gap-y-1 text-black '>
+          <select id="dropdown" value={selectedOption} onChange={handleDropDownChange}>
+            <option value="">-- Select --</option>
+              {options.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+            ))}
+      </select>
 
-
+      {selectedOption && (
+        <div>
+          <h3>Selected option: {selectedOption}</h3>
         </div>
+      )}
+
+      </div>
       );
 }

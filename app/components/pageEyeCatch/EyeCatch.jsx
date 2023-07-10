@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { ButtonEyeCatch } from './ButtonEyeCatch';
@@ -10,7 +10,6 @@ export const EyeCatch = () => {
   const [subHeaderName, setSubHeaderName] = useState(null);
 
   useEffect(() => {
-    console.log("Params:", { pathname });
     if (pathname !== null) {
       if (pathname === "/generators/installation") {
         setHeaderName('Generators Installation');
@@ -23,12 +22,12 @@ export const EyeCatch = () => {
     <div>
       <div className='relative pt-10'>
         <div
-          className='absolute inset-0 bg-cover bg-center h-[75rem] md:h-[45rem] lg:h-[25rem]'
+          className="absolute inset-0 bg-cover bg-center h-[75rem] md:h-[45rem] lg:h-[25rem]"
           style={{ backgroundImage: "url('/backgroundImages/Electrical-Services.jpg')" }}
         >
-          <div className='h-full w-full bg-gradient-to-b from-transparent to-black opacity-50'></div>
+          <div className="h-full w-full bg-gradient-to-b from-transparent to-black opacity-50"></div>
         </div>
-        <div className='flex flex-col lg:flex-row justify-center text-center items-center relative'>
+        <div className="flex flex-col lg:flex-row justify-center text-center items-center relative">
           <div className='relative'>
             <div className='justify-center'>
               <h1 className='text-4xl capitalize'>
