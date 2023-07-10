@@ -24,13 +24,17 @@ export const EyeCatch = () => {
 
   return (
     <div>
-      <div className={`relative pt-10 ${montserrat.className}`}>
-        <div
-          className="absolute inset-0 bg-cover bg-center h-[75rem] md:h-[45rem] lg:h-[25rem]"
-          style={{ backgroundImage: "url('/backgroundImages/Electrical-Services.jpg')" }}
+      <div className={`relative pt-10 ${montserrat.className} pb-14`}>
+      <div
+          className="absolute inset-0 bg-cover"
+          style={{
+            backgroundImage: "url('/backgroundImages/Electrical-Services.jpg')",
+            backgroundPosition: "center" // Move the image to the bottom
+          }}
         >
-          <div className="h-full w-full bg-gradient-to-b from-transparent to-black opacity-50"></div>
+          <div className="h-full w-full bg-gradient-to-b from-transparent to-black opacity-90"></div>
         </div>
+
         <div className="flex flex-col lg:flex-row justify-center text-center items-center relative">
           <div className='relative'>
             <div className='justify-center'>
