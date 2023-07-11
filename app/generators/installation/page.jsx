@@ -1,15 +1,28 @@
-import React from 'react'
-
+'use client'
+import React, {useState} from 'react'
 import { MidCatchChatYellow, MidCatchChatRed} from "../../components/midCatchChat";
-
 import {GenSideBarLinks,RequestAppointmentSide} from "../../components/genSideBar";
 import {Headers} from "../../components/header/Headers";
 import {EyeCatch} from "../../components/pageEyeCatch/EyeCatch";
 import {PlayItSafe} from "../../components/bottomEyeCatch/PlayItSafe";
 import { Montserrat } from 'next/font/google';
+import Image from 'next/image';
+import {MainGeneralContactUsComponent} from "../../components/GeneralContactUsComponents/MainGeneralContactUsComponent";
+import { ServiceTheseBrands} from "../../components/bottomEyeCatch/ServiceTheseBrands"
+import { MyFooter} from "../../components/MyFooter";
+
 const montserrat = Montserrat({ subsets:['latin'] });
 
 function page() {
+  const [highlightInput, setHighlightInput] = useState(false);
+  
+  const handleButtonClick = () => {
+    setHighlightInput(true);
+    setTimeout(() => {
+      setHighlightInput(false);
+    }, 4);
+  };
+
   return (
     <div className={`${montserrat.className}`}> 
       <a href="tel:919-557-4477">
@@ -17,28 +30,44 @@ function page() {
           (919)-557-447
         </div>
       </a>
-      <Headers/>
-      
-       <EyeCatch/>
-        <div className='bg-white text-black relative mt-10 flex flex-col text-center sm:flex-row lg:px-40 pb-3'>
+      <Headers />
+        <EyeCatch highlightInput={highlightInput}/>
+        <div className='bg-white text-black relative mt-10 flex flex-col text-center md:flex-row lg:px-40 pb-3'>
         {/* split this please */}
           <div className='lg:w-1/4 md:2/3'>
           {/* Right hand side */}
             <GenSideBarLinks/>
             
-            <RequestAppointmentSide/>
+            <RequestAppointmentSide onButtonClick={handleButtonClick}/>
           </div>
           <div className='lg:w-3/4'>
+          {/* -.9  top -1.8 left */}
             {/* Left hand side */}
             <div className='p-6'>
               <p className='capitalize text-orange-300 text-4xl font-bold'> generator installation and Replacement</p>
-              <div className=" w-96 h-9 relative">
-                <div className="w-96 h-8 left-0 top-0 md:left-[44px] lg:left-[384px] absolute text-orange-300 text-3xl font-bold leading-loose"><h3>Keeping The Power On When You Need It</h3></div>
-                <div className="w-96 h-8 left-[-1.80px] top-[-0.90px]  md:left-[42.2px] lg:left-[382.2px] absolute text-black text-3xl font-bold leading-loose">Keeping The Power On When You Need It</div>
+              <div>  
+               <div className="w-96 h-8 left-[118.4px] md:left-[332px] lg:left-[960.2px] top-[839.6px] md:top-[132.7px] lg:top-[84.8px] absolute text-orange-300 text-3xl font-bold "><h3>Keeping The Power On When You Need It</h3></div>
+               <div className="w-96 h-8 left-[116.6px] md:left-[330.2px] lg:left-[958.4px] top-[838.7px]  md:top-[131.8px] lg:top-[83.9px] absolute text-black text-3xl font-bold ">Keeping The Power On When You Need It</div>
+            </div>
+            {/* image here */}
+            <Image
+              className='mt-32 lg:ml-60'
+              src="/Generators/Installation/GeneratorImage.webp"
+              width={600}
+              height={600}
+
+            />
+              <div className="h-9 relative mt-3">
+                <p className='mt-3 text-left pl-4 text-orange-300 text-3xl font-bold absolute left-[43.19px] md:left-[71px] lg:left-[310.2px] top-[531px] md:top-[595px] lg:top-[408px]  '>Expert Generator Installation 1 </p>
+                <p className='mt-3 text-left pl-4 text-black text-3xl font-bold absolute left-[41.39px] md:left-[69.2px] lg:left-[308.2px] top-[530.1px] md:top-[594.1px] lg:top-[407.2px]  '>Expert Generator Installation 1 </p>
+              </div>
+              <div className=" h-9 relative mt-3">
+                <p className='mt-3 text-left pl-4 text-orange-300 text-3xl font-bold absolute left-[43.19px] md:left-[71px] lg:left-[310.2px] top-[731px] md:top-[835px] lg:top-[484px]  '>Expert Generator Installation 2</p>
+                <p className='mt-3 text-left pl-4 text-black text-3xl font-bold absolute left-[41.39px] md:left-[69.2px] lg:left-[308.2px] top-[730.1px] md:top-[834.1px] lg:top-[483.1px]  '>Expert Generator Installation 2</p>
               </div>
             </div>
-          {/* [TODO:] PHOTO HERE */}
-          <p className='p-6 text-left mt-10  leading-relaxed'>
+          
+          <p className='p-6 text-left   leading-relaxed'>
             We know that you and your family depend on electricity to power your life.
              We also know that there are times your home and business deal with power 
              loss that can last days and even weeks. Don’t let unexpected power loss stop 
@@ -49,10 +78,10 @@ function page() {
                team today for a free, no obligation generator consultation today!</p>
             <MidCatchChatYellow/>
             <div>
-              <p className='mt-3 text-left pl-4 text-orange-300 text-3xl font-bold absolute left-[320px] md:left-[264px] lg:left-[906px] top-[837px] md:top-[754px] lg:top-[534px]  '>Expert Generator Installation</p>
-              <p className='mt-3 text-left pl-4 text-black text-3xl font-bold absolute left-[318.20px] md:left-[262.20px] lg:left-[904.20px] top-[836.10px] md:top-[753.10px] lg:top-[533.10px]  '>Expert Generator Installation</p>
+             
+             
             </div>
-            <p className='p-6 text-left mt-20'>
+            <p className='p-6 text-left mt-20'>z
             Our expert team is ready to handle and wire your new generator directly
              into your service panel or transfer switch. Doing this will make 
              sure that the electricity is transferred safely into the home and 
@@ -61,12 +90,8 @@ function page() {
               hazards, so make sure you have your generator installed by a 
               certified professional every time.
             </p>
-            <div>
-            <p className='mt-3 text-left pl-4 text-orange-300 text-3xl font-bold absolute left-[320px] md:left-[264px] lg:left-[906px] top-[1170px] md:top-[1022.1px] lg:top-[675.1px]  '>Expert Generator Installation 2</p>
-            <p className='mt-3 text-left pl-4 text-black text-3xl font-bold absolute left-[318.20px] md:left-[262.20px] lg:left-[904.20px] top-[1169.1px] md:top-[1021.2px] lg:top-[675.10px]  '>Expert Generator Installation 2</p>
 
-            </div>
-            <p className='p-6 text-left mt-14 md:mt-5 lg:mt-2'>
+            <p className='p-6 text-left mt-14 md:mt-10 lg:mt-2'>
               Have The Experts Install Your New Generator!
               At PowerMaster Electric,  your safety and  satisfaction are our highest priority .
               We are a full-service Generac generator installer. Please consider Powermaster Electric for your generator 
@@ -78,6 +103,9 @@ function page() {
           {/* LEFT HAND SIDE  */}
         </div>
           <PlayItSafe/>
+          <MainGeneralContactUsComponent/>
+          <ServiceTheseBrands/>
+          <MyFooter/>
     </div>
   )
 }
