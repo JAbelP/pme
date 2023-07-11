@@ -1,12 +1,12 @@
-import React from "react"
-import {PageComponent} from "./PageComponent"
-function page() {
-  return (
-    <div>
-        <PageComponent/>
-    </div>
-  )
+import React from "react";
+import { PageComponent } from "./PageComponent";
 
+function Page() {
+  return (
+    <div className="max-w-screen w-screen overflow-x-hidden">
+      <PageComponent />
+    </div>
+  );
 }
 
-export default page
+export default Page;

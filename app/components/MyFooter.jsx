@@ -53,7 +53,7 @@ export const MyFooter = () => {
             </div>
       </div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.9460040198705!2d-78.806668!3d35.53033200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac851b76af7ff3%3A0xa0e7de46989558ed!2s311%20Jarco%20Dr%2C%20Fuquay-Varina%2C%20NC%2027526!5e0!3m2!1sen!2sus!4v1689046850636!5m2!1sen!2sus"  height="300" style={{ border: 0, width: "99vw" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.9460040198705!2d-78.806668!3d35.53033200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac851b76af7ff3%3A0xa0e7de46989558ed!2s311%20Jarco%20Dr%2C%20Fuquay-Varina%2C%20NC%2027526!5e0!3m2!1sen!2sus!4v1689046850636!5m2!1sen!2sus"  height="300" style={{ border: 0, width: "96vw" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     </div>
   );
 };
