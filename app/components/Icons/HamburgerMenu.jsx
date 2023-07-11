@@ -133,7 +133,7 @@ const dropDown = (tabName) =>{
      
       {/* Example of Direct link */}
       <li>
-        <Link href={"/Book"}>
+        <Link href={"/generators/installation/"}>
           <p onClick={toggleSideMenu}>Book Us</p>
         </Link>
       </li>
