@@ -115,7 +115,7 @@ export const ContactUs = ({ highlightInput }) => {
 
     <div className='flex flex-col justify-center items-center gap-y-1'>
 {    !showConfirmation &&(
-       <div>    
+       <div className='flex flex-col justify-center items-center gap-y-1'>    
         <select
           className="text-black px-3 py-2 w-96  lg:w-[450px] h-10 mb-3 rounded-sm"
           value={selectedOption}
