@@ -45,7 +45,7 @@ export const PageComponent = () => {
             <div className='p-6'>
               <p className='capitalize text-orange-300 text-4xl font-bold'> generator installation and Replacement</p>
               <div>  
-               <div className="w-96 h-8 left-[118.4px] md:left-[332px] lg:left-[960.2px] top-[839.6px] md:top-[132.7px] lg:top-[84.8px] absolute text-orange-300 text-3xl font-bold "><h3>Keeping The Power On When You Need It</h3></div>
+              <div className="w-96 h-8 left-[118.4px] md:left-[332px] lg:left-[960.2px] top-[839.6px] md:top-[132.7px] lg:top-[84.8px] absolute text-orange-300 text-3xl font-bold "><h3>Keeping The Power On When You Need It</h3></div>
                <div className="w-96 h-8 left-[116.6px] md:left-[330.2px] lg:left-[958.4px] top-[838.7px]  md:top-[131.8px] lg:top-[83.9px] absolute text-black text-3xl font-bold ">Keeping The Power On When You Need It</div>
             </div>
             {/* image here */}

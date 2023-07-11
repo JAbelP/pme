@@ -23,7 +23,7 @@ export const EyeCatch = ({ highlightInput }) => {
 
   return (
     <div>
-      <div className={`relative pt-10 ${montserrat.className} pb-14`}>
+      <div className={`relative pt-10 mt-16 lg:mt-28 ${montserrat.className} pb-14`}>
         <div
           className="absolute inset-0 bg-cover"
           style={{

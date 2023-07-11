@@ -84,15 +84,28 @@ export const MainGeneralContactUsComponent = () => {
   }
 
   return (
-    <div className="bg-gray-600">
+    <div className="bg-gray-600 pt-5"> 
+      <div className=' hidden lg:block lg:text-center'>
+
+        <p className=' text-black text-4xl font-bold leading-10'>
+          Your On Time, Every Time, Electricians
+        </p>
+
+        <p className='text-black text-xl font-bold leading-normal mt-2 '>
+            Request an Appointment with PowerMaster Electric
+        </p>
+
+      </div>
       <div className="flex justify-center lg:ml-[30rem]">
         <div className="text-black p-4 w-[75rem]">
-            <p className=' text-black text-4xl font-bold leading-10'>
-                Your Ontime, Every Time, Electricians
-            </p>
-            <p className='text-black text-xl font-bold leading-normal mt-2'>
-                Request an Appointment with PowerMaster Electric
-            </p>
+          <div className='lg:hidden'>
+              <p className=' text-black text-4xl font-bold leading-10'>
+                  Your On Time, Every Time, Electricians
+              </p>
+              <p className='text-black text-xl font-bold leading-normal mt-2 '>
+                  Request an Appointment with PowerMaster Electric
+              </p>
+          </div>
           <form onSubmit={handleSubmit} className="lg:flex">
             <div className="lg:w-1/2">
               <div className="flex items-center mb-4">

@@ -71,6 +71,7 @@
 import { useState } from 'react';
 import styles from './HamburgerMenu.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -93,7 +94,14 @@ const dropDown = (tabName) =>{
 
 
   return (
-    <div >
+    <div className='flex flex-row-reverse'>
+    <Image
+      className=''
+      src="/Logo/logo-powermaster-electric.webp"
+      height={200}
+      width={200}
+
+    />
         <div 
           className={`${styles.navIcon} ${isOpen ? styles.open : ''} z-30`}
           onClick={toggleSideMenu}
