@@ -33,6 +33,7 @@ export const ContactUs = ({ highlightInput }) => {
   const [phone, setPhone] = useState('');
   const [nameWarning, setNameWarning] = useState(false);
   const [emailWarning, setEmailWarning] = useState(false);
+  const [emailWarningType, setEmailWarningType] = useState("please enter an email");
   const [phoneWarning, setPhoneWarning] = useState(false);
 
   useEffect(() => {
@@ -52,16 +53,42 @@ export const ContactUs = ({ highlightInput }) => {
     setFullName(e.target.value);
     setNameWarning(false);
   };
-
+  
   const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-    setEmailWarning(false);
+    const input = e.target.value;
+    setEmail(input);
+  
+    // Regular expression for email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+    if (input && !emailRegex.test(input)) {
+      setEmailWarning(true);
+      setEmailWarningType("Please enter a valid email");
+    } else {
+      setEmailWarning(false);
+    }
   };
+  
 
   const handlePhoneChange = (e) => {
-    setPhone(e.target.value);
+    const input = e.target.value;
+    const formattedInput = input
+      .replace(/\D/g, "") // Remove non-digit characters
+      .slice(0, 10); // Limit input to 10 digits
+  
+    // Format the phone number
+    const formattedPhone =
+      "(" +
+      formattedInput.slice(0, 3) +
+      ") " +
+      formattedInput.slice(3, 6) +
+      "-" +
+      formattedInput.slice(6);
+  
+    setPhone(formattedPhone);
     setPhoneWarning(false);
   };
+  
 
   const handleSubmit = () => {
     if (fullName === '') {
@@ -69,6 +96,7 @@ export const ContactUs = ({ highlightInput }) => {
     }
     if (email === '') {
       setEmailWarning(true);
+      setEmailWarningType("")
     }
     if (phone === '') {
       setPhoneWarning(true);
@@ -111,7 +139,7 @@ export const ContactUs = ({ highlightInput }) => {
           onClick={() => setEmailWarning(false)}
         />
         {emailWarning && (
-          <p className="text-red-500 text-xs">Please fill in the Email field.</p>
+          <p className="text-red-500 text-xs">{emailWarningType}</p>
         )}
         <input
           className={`text-black px-3 py-2 w-96 lg:w-[450px] h-10 mb-${phoneWarning ? 1 : 3} rounded-sm`}
