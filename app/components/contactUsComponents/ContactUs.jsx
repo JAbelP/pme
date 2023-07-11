@@ -53,7 +53,7 @@ export const ContactUs = ({ highlightInput }) => {
     setFullName(e.target.value);
     setNameWarning(false);
   };
-  
+
   const handleEmailChange = (e) => {
     const input = e.target.value;
     setEmail(input);
@@ -96,7 +96,7 @@ export const ContactUs = ({ highlightInput }) => {
     }
     if (email === '') {
       setEmailWarning(true);
-      setEmailWarningType("")
+      setEmailWarningType("Please Fill in the Email field");
     }
     if (phone === '') {
       setPhoneWarning(true);
@@ -128,7 +128,7 @@ export const ContactUs = ({ highlightInput }) => {
           onClick={() => setNameWarning(false)}
         />
         {nameWarning && (
-          <p className="text-red-500 text-xs">Please fill in the Full Name field.</p>
+          <p className="text-red-500 text-xs capitalize">Please fill in the Full Name field.</p>
         )}
         <input
           className={`text-black px-3 py-2 w-96 lg:w-[450px] h-10 mb-${emailWarning ? 1 : 3} rounded-sm`}
@@ -139,7 +139,7 @@ export const ContactUs = ({ highlightInput }) => {
           onClick={() => setEmailWarning(false)}
         />
         {emailWarning && (
-          <p className="text-red-500 text-xs">{emailWarningType}</p>
+          <p className="text-red-500 text-xs capitalize">{emailWarningType}</p>
         )}
         <input
           className={`text-black px-3 py-2 w-96 lg:w-[450px] h-10 mb-${phoneWarning ? 1 : 3} rounded-sm`}
@@ -150,7 +150,7 @@ export const ContactUs = ({ highlightInput }) => {
           onClick={() => setPhoneWarning(false)}
         />
         {phoneWarning && (
-          <p className="text-red-500 text-xs">Please fill in the Phone Number field.</p>
+          <p className="text-red-500 text-xs capitalize">Please fill in the Phone Number field.</p>
         )}
         <button
           className="flex justify-center items-center w-96 bg-yellow-300 text-black px-5 py-4 h-[57px] lg:w-[450px] font-bold rounded-md"
