@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 export const ContactUs = ({ highlightInput }) => {
   const pathname = usePathname();
   const inputRef = useRef(null);
+  
 
   useEffect(() => {
     if (highlightInput) {
@@ -35,6 +36,7 @@ export const ContactUs = ({ highlightInput }) => {
   const [emailWarning, setEmailWarning] = useState(false);
   const [emailWarningType, setEmailWarningType] = useState("please enter an email");
   const [phoneWarning, setPhoneWarning] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   useEffect(() => {
     if (pathname === 'generators/installation') {
@@ -101,12 +103,19 @@ export const ContactUs = ({ highlightInput }) => {
     if (phone === '') {
       setPhoneWarning(true);
     }
+
+    if (fullName !== '' && email !== '' && phone !== '') {
+      setShowConfirmation(true);
+    }
   };
+
 
   return (
     <div className='flex flex-col justify-center items-center gap-y-1 text-black'>
 
-      <div className='flex flex-col justify-center items-center gap-y-1'>
+    <div className='flex flex-col justify-center items-center gap-y-1'>
+{    !showConfirmation &&(
+       <div>    
         <select
           className="text-black px-3 py-2 w-96  lg:w-[450px] h-10 mb-3 rounded-sm"
           value={selectedOption}
@@ -128,7 +137,7 @@ export const ContactUs = ({ highlightInput }) => {
           onClick={() => setNameWarning(false)}
         />
         {nameWarning && (
-          <p className="text-red-500 text-xs capitalize">Please fill in the Full Name field.</p>
+          <p className="text-red-500 text-xbase capitalize">Please fill in the Full Name field.</p>
         )}
         <input
           className={`text-black px-3 py-2 w-96 lg:w-[450px] h-10 mb-${emailWarning ? 1 : 3} rounded-sm`}
@@ -139,7 +148,7 @@ export const ContactUs = ({ highlightInput }) => {
           onClick={() => setEmailWarning(false)}
         />
         {emailWarning && (
-          <p className="text-red-500 text-xs capitalize">{emailWarningType}</p>
+          <p className="text-red-500 text-xbase capitalize">{emailWarningType}</p>
         )}
         <input
           className={`text-black px-3 py-2 w-96 lg:w-[450px] h-10 mb-${phoneWarning ? 1 : 3} rounded-sm`}
@@ -150,7 +159,7 @@ export const ContactUs = ({ highlightInput }) => {
           onClick={() => setPhoneWarning(false)}
         />
         {phoneWarning && (
-          <p className="text-red-500 text-xs capitalize">Please fill in the Phone Number field.</p>
+          <p className="text-red-500 text-base capitalize">Please fill in the Phone Number field.</p>
         )}
         <button
           className="flex justify-center items-center w-96 bg-yellow-300 text-black px-5 py-4 h-[57px] lg:w-[450px] font-bold rounded-md"
@@ -158,6 +167,13 @@ export const ContactUs = ({ highlightInput }) => {
         >
           SUBMIT INFORMATION NOW
         </button>
+        </div>)
+        }
+        {showConfirmation && (
+        <div className="bg-gray-200 px-3 py-2 w-96 lg:w-[450px] rounded-sm">
+          Thank you, we will reach out shortly.
+        </div>
+      )}
           <a href="tel:919-557-4477">
             <div className="w-56 h-9 text-yellow-200 text-3xl font-semibold leading-9">(919) 557-4477</div>
           </a>
