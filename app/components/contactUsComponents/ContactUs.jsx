@@ -1,9 +1,22 @@
 'use client';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import { usePathname } from 'next/navigation';
 
-export const ContactUs = () => {
+export const ContactUs = ({ highlightInput }) => {
   const pathname = usePathname();
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (highlightInput) {
+      inputRef.current.select();
+      inputRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
+  }, [highlightInput]);
+
+
 
   const options = [
     'General Installation',
@@ -78,7 +91,8 @@ export const ContactUs = () => {
           ))}
         </select>
         <input
-          className={`text-black px-3 py-2 w-96 lg:w-[450px] h-12 mb-${nameWarning ? 1 : 3} rounded-sm`}
+          ref={inputRef}
+          className={`text-black px-3 py-2 w-96 lg:w-[450px] h-12 mb-${nameWarning ? '1' : '3'} rounded-sm`}
           type="text"
           placeholder="Full Name"
           onChange={handleFullNameChange}
