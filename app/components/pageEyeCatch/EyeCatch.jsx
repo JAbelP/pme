@@ -7,7 +7,7 @@ import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({ subsets:['latin'] });
 
-export const EyeCatch = () => {
+export const EyeCatch = ({ highlightInput }) => {
   const pathname = usePathname();
   const [headerName, setHeaderName] = useState(null);
   const [subHeaderName, setSubHeaderName] = useState(null);
@@ -23,7 +23,7 @@ export const EyeCatch = () => {
 
   return (
     <div>
-      <div className={`relative pt-10 ${montserrat.className} pb-14`}>
+      <div className={`relative pt-10 mt-16 lg:mt-28 ${montserrat.className} pb-14`}>
         <div
           className="absolute inset-0 bg-cover"
           style={{
@@ -58,7 +58,7 @@ export const EyeCatch = () => {
               </p>
             </div>
             <p className='text-2xl mb-3 capitalize' style={{ textShadow: '0px 0px 20px rgba(0, 0, 0, 1)' }}>Get Your FREE estimate today!</p>
-            <ContactUs />
+            <ContactUs highlightInput={highlightInput}/>
           </div>
         </div>
       </div>
