@@ -46,9 +46,9 @@ export const EyeCatch = ({ highlightInput }) => {
               </h4>
             </div>
             <div className='flex  flex-col items-center md:flex-row gap-x-10 mb-6 lg:mr-8 md:ml-36 lg:ml-9'>
-              <ButtonEyeCatch text="Maintenance" image="/EyeCatchButtonIcons/electrician_icon.webp" />
-              <ButtonEyeCatch text="Repair" image="/EyeCatchButtonIcons/electrician_tools_icon.webp"/>
-              <ButtonEyeCatch text="Installation" image="/EyeCatchButtonIcons/fusebox_icon.webp"/>
+              <ButtonEyeCatch text="Maintenance" image="/EyeCatchButtonIcons/electrician_icon.webp" alt="Maintenance"/>
+              <ButtonEyeCatch text="Repair" image="/EyeCatchButtonIcons/electrician_tools_icon.webp" alt="Repair"/>
+              <ButtonEyeCatch text="Installation" image="/EyeCatchButtonIcons/fusebox_icon.webp" alt="Installation"/>
             </div>
           </div>
           <div className='text-center'>

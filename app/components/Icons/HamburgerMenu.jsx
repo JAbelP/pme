@@ -100,6 +100,7 @@ const dropDown = (tabName) =>{
       src="/Logo/logo-powermaster-electric.webp"
       height={200}
       width={200}
+      alt='Power Master Electric '
 
     />
         <div 

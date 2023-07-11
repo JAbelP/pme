@@ -12,17 +12,20 @@ export const ServiceTheseBrands = () => {
           src='/Brands/genera_Logo.webp'
           width={300}
           height={100}
+          alt='we service Genera'
         />
         <Image
           src='/Brands/0Uvjhgc2-150x150-1.webp'
           width={300}
           height={100}
+          alt='we service cummins'
         />
         <Image
         className='pb-6'
           src='/Brands/Blue-Star-Logo-Color.webp'
           width={300}
           height={100}
+          alt='we service Blue Star'
         />
       </div>
       

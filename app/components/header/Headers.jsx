@@ -8,6 +8,7 @@ export const Headers = () => {
       <div className="relative">
         <div className="flex flex-row items-start h-0">
           <Image
+          alt='Power Master Electric '
           className=''
           src="/Logo/logo-powermaster-electric.webp"
           height={200}

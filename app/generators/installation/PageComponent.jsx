@@ -54,6 +54,7 @@ export const PageComponent = () => {
               src="/Generators/Installation/GeneratorImage.webp"
               width={600}
               height={600}
+              alt='Image of a Generator '
 
             />
               <div className="h-9 relative mt-3">
